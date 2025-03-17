@@ -1,0 +1,40 @@
+# Add new  files for deployment with the status as deploy. 
+# Rearrange the objects and files in the required order of execution. first element in YAML is executed first.
+# For any updates on the existing files which requires redeployment, change status to deploy.
+# For any Adhoc DML opertion save the command on  file and mention on the adhoc setion with status as deploy.
+# Status failed reflects failed deployemnts, verify the generated logs in logs folder.
+staging:
+  table:
+    staging_table: deploy
+  view:
+    staging_view: deploy
+  procedure:
+    staging_procedure: deploy
+  stage:
+    staging_stage: deploy
+  stream:
+    staging_stream: deploy
+  task:
+    staging_task: deploy
+  adhoc:
+    staging_adhoc: deploy
+ods:
+  table:
+    ods_table: deployed
+  view:
+  procedure:
+  stage:
+  stream:
+  task:
+  adhoc:
+curate:
+  table:
+  view:
+  procedure:
+  stage:
+  stream:
+  task:
+  adhoc:
+
+
+
